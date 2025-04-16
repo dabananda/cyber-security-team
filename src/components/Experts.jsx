@@ -6,7 +6,7 @@ const Experts = ({ addToListHandler }) => {
   const [experts, setExperts] = useState([]);
 
   useEffect(() => {
-    axios.get("../../experts.json").then((data) => setExperts(data.data));
+    axios.get("/experts.json").then((data) => setExperts(data.data));
   }, []);
 
   return (
